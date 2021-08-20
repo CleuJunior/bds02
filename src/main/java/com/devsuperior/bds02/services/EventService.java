@@ -24,7 +24,7 @@ public class EventService {
             eventEntity.setName(eventDTO.getName());
             eventEntity.setDate(eventDTO.getDate());
             eventEntity.setUrl(eventDTO.getUrl());
-            eventEntity.setCityId(city);
+            eventEntity.setCity(city);
             eventEntity = eventRepository.save(eventEntity);
 
             return new EventDTO(eventEntity);

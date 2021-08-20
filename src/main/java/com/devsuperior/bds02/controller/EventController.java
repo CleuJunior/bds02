@@ -16,11 +16,11 @@ public class EventController {
     private EventService eventService;
 
 
-    @PutMapping(value = "/{id}")
-    public ResponseEntity<EventDTO> update(@PathVariable Long id, @RequestBody EventDTO eventDTO)
-    {
-        eventDTO = eventService.update(id, eventDTO);
-        return ResponseEntity.ok().body(eventDTO);
-    }
+//    @PutMapping(value = "/{id}")
+//    public ResponseEntity<EventDTO> update(@PathVariable Long id, @RequestBody EventDTO eventDTO)
+//    {
+//        eventDTO = eventService.update(id, eventDTO);
+//        return ResponseEntity.ok().body(eventDTO);
+//    }
 
 }
